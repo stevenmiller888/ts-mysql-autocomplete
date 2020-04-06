@@ -1,7 +1,5 @@
 # ts-mysql-autocomplete
 
-![Alt Text](https://github.com/stevenmiller888/ts-mysql-autocomplete/workflows/CI/badge.svg)
-
 > An autocomplete engine for MySQL queries.
 
 ![Alt Text](https://github.com/stevenmiller888/ts-mysql-autocomplete/raw/master/.github/code.png)
@@ -25,16 +23,13 @@ npm install ts-mysql-autocomplete
 ```typescript
 import { MySQLAutocomplete } from 'ts-mysql-autocomplete'
 
-const autocomplete = new MySQLAutocomplete({
-  version: '5.7.7'
-  uppercaseKeywords: true
-})
+const autocompleter = new MySQLAutocomplete()
 
-const entries = autocomplete('SELEC', 5)
-console.log(entries) // [ 'SELECT' ]
+const entries1 = autocompleter.autocomplete('SELEC', 5)
+console.log(entries1) // [ 'SELECT' ]
 
-const entries = autocomplete('SELECT * FROM us', 16)
-console.log(entries) // [ 'users' ]
+const entries2 = autocompleter.autocomplete('SELECT * FROM us', 16)
+console.log(entries2) // [ 'users' ]
 ```
 
 ## Related
