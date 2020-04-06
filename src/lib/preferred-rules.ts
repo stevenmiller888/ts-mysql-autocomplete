@@ -1,0 +1,33 @@
+import { MySQLParser } from 'ts-mysql-parser'
+
+export const preferredRules = new Set([
+  MySQLParser.RULE_schemaRef,
+  MySQLParser.RULE_tableRef,
+  MySQLParser.RULE_tableRefWithWildcard,
+  MySQLParser.RULE_filterTableRef,
+  MySQLParser.RULE_columnRef,
+  MySQLParser.RULE_columnInternalRef,
+  MySQLParser.RULE_tableWild,
+  MySQLParser.RULE_functionRef,
+  MySQLParser.RULE_functionCall,
+  MySQLParser.RULE_runtimeFunctionCall,
+  MySQLParser.RULE_triggerRef,
+  MySQLParser.RULE_viewRef,
+  MySQLParser.RULE_procedureRef,
+  MySQLParser.RULE_logfileGroupRef,
+  MySQLParser.RULE_tablespaceRef,
+  MySQLParser.RULE_engineRef,
+  MySQLParser.RULE_collationName,
+  MySQLParser.RULE_charsetName,
+  MySQLParser.RULE_eventRef,
+  MySQLParser.RULE_serverRef,
+  MySQLParser.RULE_user,
+  MySQLParser.RULE_userVariable,
+  MySQLParser.RULE_systemVariable,
+  MySQLParser.RULE_labelRef,
+  MySQLParser.RULE_setSystemVariable,
+  MySQLParser.RULE_parameterName,
+  MySQLParser.RULE_procedureName,
+  MySQLParser.RULE_identifier,
+  MySQLParser.RULE_labelIdentifier
+])
