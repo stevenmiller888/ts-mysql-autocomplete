@@ -1,6 +1,6 @@
 {
   "name": "ts-mysql-autocomplete",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An autocomplete engine for MySQL queries.",
   "license": "MIT",
   "repository": "stevenmiller888/ts-mysql-autocomplete",
